@@ -1,0 +1,8 @@
+from abc import ABC, abstractmethod
+
+class NotificationChannel(ABC):
+
+    @abstractmethod
+    def send_notification(self, message: str) -> None:
+        pass
+
